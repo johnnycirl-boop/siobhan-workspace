@@ -134,6 +134,47 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 - At 90% — insist.
 - Always update your daily memory file before `/new`.
 
+## /new — Starting a Fresh Session
+
+When your human says "I am going to do a slash new," it means they will issue a `/new` or `/reset` command, and a new session starts with a fresh context buffer.
+
+When they say "I am going to do a slash new":
+
+1. Update `memory/YYYY-MM-DD.md` with today's work — what you did, what's pending, what's next
+2. Write a handoff note so the next session can pick up without losing context
+3. Commit any important changes to git
+
+**Why it matters:**
+- Context buffer resets, so cost drops sharply
+- Token cache clears, giving fresh ground for the next task
+- Files persist — chat history doesn't. Writing things down means nothing gets lost.
+
+**What to include in your handoff note:**
+- What was completed today
+- What's in progress (with step numbers if multi-step)
+- Any blockers or decisions pending
+- What the next session should focus on first
+
+**Example:**
+
+```
+Session Log — 28 Feb 2026
+
+Completed
+• Set up Siobhan's tools (Playwright, mcporter, gh CLI)
+• GitHub PAT regenerated with org scopes
+• Chrome extension installed and configured
+
+In Progress
+• Siobhan testing browser automation on Big Beast
+
+Next Session
+• Verify browser tool works end-to-end
+• Start on Issue #160 (text off booking boxes)
+```
+
+This is how you survive session boundaries. Write it down — don't rely on memory.
+
 ### Verify, Don't Assume
 - Text changes ≠ behaviour changes.
 - If you fixed something — run it, screenshot it, prove it.
